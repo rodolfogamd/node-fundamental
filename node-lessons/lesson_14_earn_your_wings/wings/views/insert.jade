@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    div.bs-example
+        div(class="alert alert-danger collapse", role=alert id="notification")
+        form.text-left
+            div.form-group
+                label(for="name") Name
+                input(type="text", class="form-control", name="name", placeholder="Name")
+            div.form-group
+                label(for="username") Username *
+                input(type="text", class="form-control", name="username", placeholder="Username")
+            div.form-group
+                label(for="password") Password *
+                input(type="password", class="form-control", name="password", placeholder="Password")
+            div.form-group
+                label(for="premium") Premium
+                    input(type="checkbox", class="form-control", name="premium", placeholder="Premium")
+            div.form-group
+                label(for="location") Location
+                input(type="text", class="form-control", name="location", placeholder="Location")
+            div.form-group
+                label(for="age") Age
+                input(type="number", class="form-control",name="age", placeholder="Age")
+            div.form-group
+                label(for="website") Website
+                input(type="text", class="form-control", name="website", placeholder="Website")
+            p * required
+        button(type="submit", class="btn btn-md btn-default" id="submit") Submit

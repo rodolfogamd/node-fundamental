@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h1.cover-heading= message
+        p.lead= error.status
+        p.lead
+        pre #{error.stack}

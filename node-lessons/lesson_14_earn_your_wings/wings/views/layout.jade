@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+    link(rel='stylesheet', href='/stylesheets/cover.css')
+    link(rel="icon",href="/favicon.ico")
+  body
+    .site-wrapper
+        .site-wrapper-inner
+                .cover-container
+                        .masthead.clearfix
+                                .inner
+                                        h1.masthead-brand Customers
+                                        nav
+                                                ul.nav.masthead-nav
+                                                        li(class= path === "/" ? "active" : "")
+                                                                a(href="/") List 
+                                                        li(class= path === "/insert" ? "active" : "")
+                                                                a(href="/insert") Insert
+                        .inner.cover
+                                block content
+
+                        .mastfoot
+                                .inner
+                                        p Node.js
+    block scripts
+            script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+            script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
+            script(src="/javascripts/customers.js")

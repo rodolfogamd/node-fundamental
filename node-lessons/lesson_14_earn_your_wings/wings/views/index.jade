@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    div.bs-example
+        table.table.text-left#customer-list
+            thead
+                tr
+                    th #
+                    th Name
+                    th Username
+                    th Location
+                    th Age
+                    th Website
+                    th Premium
+                    th Created At
+            tbody
+                tr
+                    td(colspan=8) Loading ...
+
+    a(href="/insert", class="btn btn-md btn-default") Insert Customer
